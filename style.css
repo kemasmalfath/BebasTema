@@ -1,0 +1,147 @@
+/* style.css */
+
+:root {
+    /* Variabel untuk mode terang */
+    --light-bg-color: #f0f2f5;
+    --light-text-color: #333;
+    --light-header-bg: #fff;
+    --light-border-color: #eee;
+    --light-button-bg: #007bff;
+    --light-button-text: #fff;
+
+    /* Variabel untuk mode gelap */
+    --dark-bg-color: #2c3e50;
+    --dark-text-color: #ecf0f1;
+    --dark-header-bg: #34495e;
+    --dark-border-color: #4a667b;
+    --dark-button-bg: #e67e22;
+    --dark-button-text: #fff;
+}
+
+/* Gaya umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit; /* Akan mengikuti warna teks body */
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    min-height: calc(100vh - 150px); /* Sesuaikan tinggi agar footer di bawah */
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9em;
+    width: 100%;
+    position: relative; /* Agar tidak tumpang tindih */
+    bottom: 0;
+    box-sizing: border-box; /* Pastikan padding tidak menambah lebar */
+    border-top: 1px solid;
+}
+
+button {
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    /* Gaya tambahan untuk tombol ikon */
+    font-size: 1.2em; /* Ukuran ikon */
+    width: 50px; /* Lebar tetap untuk tombol */
+    height: 40px; /* Tinggi tetap untuk tombol */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sembunyikan ikon yang tidak aktif */
+#darkModeToggle .fa-sun {
+    display: none; /* Defaultnya sembunyikan matahari */
+}
+
+#darkModeToggle .fa-moon {
+    display: none; /* Defaultnya sembunyikan bulan */
+}
+
+/* Gaya untuk Mode Terang (Default) */
+body.light-mode {
+    background-color: var(--light-bg-color);
+    color: var(--light-text-color);
+}
+
+body.light-mode header {
+    background-color: var(--light-header-bg);
+    color: var(--light-text-color);
+    border-color: var(--light-border-color);
+}
+
+body.light-mode footer {
+    background-color: var(--light-header-bg); /* Menggunakan warna header untuk footer */
+    color: var(--light-text-color);
+    border-color: var(--light-border-color);
+}
+
+body.light-mode button {
+    background-color: var(--light-button-bg);
+    color: var(--light-button-text);
+}
+
+body.light-mode #darkModeToggle .fa-sun {
+    display: inline-block; /* Tampilkan ikon matahari di mode terang */
+}
+
+/* Gaya untuk Mode Gelap */
+body.dark-mode {
+    background-color: var(--dark-bg-color);
+    color: var(--dark-text-color);
+}
+
+body.dark-mode header {
+    background-color: var(--dark-header-bg);
+    color: var(--dark-text-color);
+    border-color: var(--dark-border-color);
+}
+
+body.dark-mode footer {
+    background-color: var(--dark-header-bg); /* Menggunakan warna header untuk footer */
+    color: var(--dark-text-color);
+    border-color: var(--dark-border-color);
+}
+
+body.dark-mode button {
+    background-color: var(--dark-button-bg);
+    color: var(--dark-button-text);
+}
+
+body.dark-mode #darkModeToggle .fa-moon {
+    display: inline-block; /* Tampilkan ikon bulan di mode gelap */
+}
