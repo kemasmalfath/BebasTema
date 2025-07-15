@@ -6,7 +6,7 @@
 Selamat datang di contoh **aplikasi web sederhana** yang dibangun menggunakan **PHP, CSS, dan JavaScript**.  
 Proyek ini bertujuan untuk mendemonstrasikan cara kerja **fitur Dark Mode** dengan implementasi yang ringan, intuitif, dan mudah dikembangkan lebih lanjut lagi.
 
----
+
 
 ## 🧩 Fitur Utama
 
