@@ -9,7 +9,6 @@ Proyek ini bertujuan untuk mendemonstrasikan cara kerja **fitur Dark Mode** deng
 
 
 ## 🧩 Fitur Utama
-
 ✅ Mode Terang & Mode Gelap  
 ✅ Tombol toggle dengan ikon 🌞 / 🌙  
 ✅ Simpan preferensi pengguna dengan `localStorage`  
